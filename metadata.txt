@@ -1,28 +1,21 @@
-METADATA
-
 [general]
-name = IVR Plugin
-qgisMinimumVersion = 3.28
-description = Residential Vulnerability Index (IVR) analysis using cadastral and spatial data
-version = 0.1.0
-author = Manuel Blasco Jiménez
-email = manuel2blasco@edu.uah.es
+name=IVR Plugin
+qgisMinimumVersion=3.28
+description=Residential Vulnerability Index (IVR) analysis using cadastral and spatial data
+version=0.1.0
+author=Manuel Blasco Jiménez
+email=manuel2blasco@edu.uah.es
 
-about = This plugin calculates and analyses the Residential Vulnerability Index (IVR) using cadastral data from Spain. It has been developed as part of academic research focused on intra-urban vulnerability and provides tools for spatial analysis and visualization of residential vulnerability patterns.
+about=This plugin calculates and analyses the Residential Vulnerability Index (IVR) using cadastral data from Spain. It has been developed as part of formal academic research focused on intra-urban vulnerability and provides tools for spatial analysis and visualization of residential vulnerability patterns.
 
-repository = https://github.com/wildmanu/ivr_plugin
-tracker = https://github.com/wildmanu/ivr_plugin/issues
-homepage = https://github.com/wildmanu/ivr_plugin
+repository=https://github.com/wildmanu/ivr_plugin
+tracker=https://github.com/wildmanu/ivr_plugin/issues
+homepage=https://github.com/wildmanu/ivr_plugin
 
-# Recommended items
-hasProcessingProvider = no
-
-tags = vulnerability, residential, cadastre, urban analysis, qgis
-
-category = Vector
-icon = icon.png
-
-experimental = True
-deprecated = False
-
-server = False
+hasProcessingProvider=no
+tags=vulnerability,residential,cadastre,urban analysis,qgis
+category=Vector
+icon=icon.png
+experimental=True
+deprecated=False
+server=False
