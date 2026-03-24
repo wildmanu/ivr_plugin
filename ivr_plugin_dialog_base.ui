@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResidentialParkVulnerabilityDialogBase</class>
+ <widget class="QDialog" name="ResidentialParkVulnerabilityDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Indice de Vulnerabilidad del Parque Residencial </string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="7" column="1" colspan="2">
+    <widget class="QGroupBox" name="contenedor_ejecutar">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="1">
+       <widget class="QPushButton" name="boton_ejecutar">
+        <property name="text">
+         <string>Ejecutar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QGroupBox" name="contenedor_output">
+     <property name="title">
+      <string>Carpeta Salida: Capa IVR en formato GeoPackage (.gpkg) + Información Auxiliar (.png y .csv)</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QgsFilterLineEdit" name="visualizar_salida">
+        <property name="qgisRelation" stdset="0">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="boton_salida">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3" rowspan="8">
+    <widget class="QGroupBox" name="contendor_info">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="2">
+       <widget class="QTextBrowser" name="descripcion_herramienta">
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Índice de Vulnerabilidad del Parque Residencial&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;El modelo evalúa información catastral procedente de la Sede Electrónica del Catastro, obtenida mediante la descarga de ficheros en formato &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;.CAT&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; y &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Shapefile&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; desde el apartado &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-style:italic;&quot;&gt;Difusión de datos catastrales&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;. La información analizada se centra en la &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Tabla Tipo 14 (Registros de Construcciones)&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;, empleando las siguientes variables: &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;     (A)   -    &lt;/span&gt;&lt;span style=&quot; font-size:8pt; text-decoration: underline;&quot;&gt;Superficie bien inmueble&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;     (B)   -    &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-style:italic; text-decoration: underline;&quot;&gt;Antigüedad efectiva&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;     (C)   -   &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-style:italic; text-decoration: underline;&quot;&gt;Coeficiente de Valor de la construcción &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; ( Real Decreto 1020/1993)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;     (C.1) -  Tipología constructiva    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;     (C.2) -  Calidad constructiva                            &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Cada variable se normaliza mediante una función logística calibrada a partir de &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;672 municipios &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;de las &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Grandes Áreas Urbanas (GAUs)&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; de España, utilizando datos catastrales del &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;segundo semestre de 2025&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;. Posteriormente, las variables se integran en un modelo aditivo para obtener el &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;IVR GAU&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;, que cuantifica la vulnerabilidad del parque residencial a partir del conjunto de &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Bienes Inmuebles (BI)&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; de dichas GAUs. Este mismo procedimiento se aplica a&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt; escala municipal&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;, generando el &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;IVR LOC&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;, calculado exclusivamente con los BI existentes en cada municipio.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Además, el complemento permite incorporar tanto las variables originales como las normalizadas del &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;IVR&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;, así como distintas &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;clasificaciones de las GAUs&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; (Cuantiles, Jenks e Intervalos iguales). Incluye también variables adicionales, como el número de construcciones o de &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Bienes Inmuebles por parcela catastral&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;. Asimismo, posibilita filtrar los BI no estrictamente residenciales, ajustar la proyección al área de estudio y añadir &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;salidas gráficas y resúmenes de datos agregados&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;OBTENCIÓN DE DATOS&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Descargue los datos catastrales en el aparado &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:8pt; text-decoration: underline;&quot;&gt;Difusión de datos catastrales&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&amp;quot; en &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt; www.sedecatastro.gob.es&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;1.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; Descargue la información alfanumérica por provincia (formato CAT), seleccionando el tipo &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;urbano&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;2.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; Descargue la cartografía vectorial por provincia (formato Shapefile), seleccionando el tipo &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Urbana sin Historia&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; (descargue los ficheros SHP.zip y SHP.z01 si la provincia lo requiere).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Deposite ambos ficheros para una o varias provincias en la &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;&amp;quot;Carpeta Entrada&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; y se procesarán todos los municipios automáticamente. Si solo desea procesar algunos municipios, elimine de la carpeta de descomprimidos aquellos que no necesite.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Para archivos con extensión SHP.z01, puede descomprimirlos manualmente con 7-Zip o bien dejar que el plugin los descomprima y cancelar el proceso una vez que la barra de progreso se inicie.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;REQUISISTOS&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Requerimientos: Debe tener instalado &amp;quot;7-Zip&amp;quot; en su ordenador en caso de que quiera procesar datos de la sigueintes provincias: Alicante, A Coruña, Barcelona, Madrid, Málaga, Murcia, Sevilla, Tarragona, Toledo, Valencia. Si no tiene 7-Zip podrá descargalo en https://www.7-zip.org/&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" alignment="Qt::AlignHCenter">
+       <widget class="QDialogButtonBox" name="button_box">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QGroupBox" name="contendor_ivr">
+     <property name="title">
+      <string>Parámetros para generar la capa IVR</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="0" column="2">
+       <widget class="QLabel" name="texto_ivr">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Información Capa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QGroupBox" name="sub_contedor_ivr">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="bt_gau">
+           <property name="text">
+            <string>Clases con Clasificador GAU</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="bt_org">
+           <property name="text">
+            <string>Variables originales IVR</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="bt_nor">
+           <property name="text">
+            <string>Variables normalizadas IVR</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="br_adc">
+           <property name="text">
+            <string>Variables adicionales</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QGroupBox" name="sub_contedor_clasificador">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0" alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="texto_clase">
+           <property name="text">
+            <string>Método</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="bt_rag">
+           <property name="minimum">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" alignment="Qt::AlignHCenter">
+          <widget class="QCheckBox" name="bt_ivr_loc">
+           <property name="text">
+            <string>IVR LOC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" alignment="Qt::AlignHCenter">
+          <widget class="QCheckBox" name="bt_ivr_gau">
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>IVR GAU </string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Variable a visualizar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="bt_met"/>
+         </item>
+         <item row="1" column="0" alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="texto_metodo">
+           <property name="text">
+            <string>Clases</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="texto_clasificador">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Clasificador GAU&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="2">
+       <widget class="QGroupBox" name="param_aux">
+        <property name="title">
+         <string>Parámetros auxiliares (Control Bienes Inmubles y Proyección de la Capa)</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="4" column="0">
+          <widget class="QGroupBox" name="sub_con_param_aux">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="2" column="2">
+             <widget class="QComboBox" name="bt_crs"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;% Participación Residencial &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Proyecciones Disponibles&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QgsOpacityWidget" name="bt_mix"/>
+            </item>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="bt_15">
+              <property name="text">
+               <string> Sólo Bienes Inmubles Residenciales Urbanos (T15)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Filtro Bienes Inmubles&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QGroupBox" name="contenedor_input">
+     <property name="title">
+      <string>Carpeta Entrada: Peticiones de Descarga DGC (CAT.ZIP y SHA.ZIP) o Carpeta Descompridos (Municipios Seleccionados).</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QgsFilterLineEdit" name="visualizar_entrada">
+        <property name="qgisRelation" stdset="0">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="boton_entrada">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1" rowspan="4" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Información auxiliar dereivada del IVR</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_12">
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="bt_mun">
+           <property name="text">
+            <string>CSV por Municipios</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="bt_pro">
+           <property name="text">
+            <string>CSV por Provincias</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="dt_agg">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Datos Agregados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="bt_fsig">
+           <property name="text">
+            <string>Figura de Sigmoides</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="bt_fnor">
+           <property name="text">
+            <string>Figura de Normalización</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="gf_aux">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Gráficos Auxiliares&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFilterLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qgsfilterlineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsOpacityWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsopacitywidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>descripcion_herramienta</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>ResidentialParkVulnerabilityDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>ResidentialParkVulnerabilityDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

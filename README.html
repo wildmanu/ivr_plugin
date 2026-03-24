@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>README</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      background: #f6f7f9;
+      color: #222;
+    }
+    .container {
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 24px 40px;
+    }
+    .page-title {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .lang-section {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .lang-tag {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 8px 0 16px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+    p {
+      margin: 10px 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    ul, ol {
+      margin: 10px 0 10px 24px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 20px 0;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-title">
+      <h1>IVR Plugin README</h1>
+      <p>Copyright (C) 2026 Manuel Blasco Jiménez</p>
+      <p>GNU GENERAL PUBLIC LICENSE</p>
+      <p>Version 3, 29 June 2007</p>
+    </div>
+    
+<section class="lang-section">
+  <div class="lang-tag">English</div>
+  <p>Language: 1) English 2) Español 3) Català</p>
+<p>IVR Plugin (Residential Vulnerability Index)</p>
+<h1>Language: English</h1>
+<h2>Overview</h2>
+<p>The IVR Plugin is a QGIS plugin designed to calculate and analyze the Residential Vulnerability Index (IVR) using cadastral and spatial data.</p>
+<p>It provides tools to support urban analysis by identifying patterns of residential vulnerability at different spatial scales, enabling better-informed decision-making in urban planning and policy.</p>
+<h2></h2>
+<h2>Features</h2>
+<ul><li>Calculation of Residential Vulnerability Index (IVR)</li><li>Integration with cadastral data sources</li><li>Automated data processing workflows</li><li>Spatial visualization of vulnerability patterns</li><li>User-friendly graphical interface within QGIS</li></ul>
+<h2></h2>
+<h2>Requirements</h2>
+<ul><li>QGIS 3.34 or higher</li><li>Python 3 (included with QGIS)</li></ul>
+<h2></h2>
+<h2>Installation</h2>
+<p>From QGIS Plugin Manager (recommended):</p>
+<p>1. Open QGIS</p>
+<p>2. Go to Plugins &gt; Manage and Install Plugins</p>
+<p>3. Search for &quot;IVR Plugin&quot;</p>
+<p>4. Click Install</p>
+<p>Manual installation:</p>
+<p>1. Download the plugin .zip file</p>
+<p>2. Extract it into your QGIS plugins directory:</p>
+<p>C:/Users/&lt;your_user&gt;/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins</p>
+<p>3. Restart QGIS</p>
+<p>4. Enable the plugin in Plugin Manager</p>
+<h2></h2>
+<h2>Usage</h2>
+<p>1. Open QGIS</p>
+<p>2. Load your spatial and cadastral datasets --&gt; https://www.sedecatastro.gob.es/</p>
+<p>3. Launch the IVR Plugin from the Plugins menu</p>
+<p>4. Configure input parameters</p>
+<p>5. Run the analysis to generate IVR outputs</p>
+<h2></h2>
+<h2>Data Requirements</h2>
+<p>The plugin is designed to work with:</p>
+<ul><li>Cadastral data (&quot;Descarga de información alfanumérica por provincia (formato CAT)&quot;)</li><li>Vector layers (&quot;Descarga de cartografía vectorial por provincia (formato Shapefile)&quot;)</li><li>Install 7-Zip to extract files from large provinces</li></ul>
+<hr>
+<h2>Limitations</h2>
+<ul><li>Requires downloading cadastral data from the Spanish Directorate General for Cadastre (Dirección General del Catastro) using a valid digital identity certificate</li><li>Requires properly formatted input data</li><li>Requires 7-Zip to extract data files in some provinces</li><li>Performance may vary depending on dataset size</li></ul>
+<h2></h2>
+<h2>Contributing</h2>
+<p>Contributions are welcome. Please open an issue or submit a pull request in the repository.</p>
+<h2></h2>
+<h2>License</h2>
+<p>This plugin is licensed under the GNU General Public License v2 or later (GPL v2+).</p>
+<p>This software has been developed as part of formal academic research. If you use this plugin in your work, please cite the following reference:</p>
+<h2>Blasco, M.; Shurupov, N.; Aguilera, F.; Sánchez, I. &amp; Prada, J. (2025). Información catastral y análisis de la vulnerabilidad residencial: hacia una herramienta para su análisis en las ciudades españolas. En XXIX Congreso de la Asociación Española de Geografía: Desafíos de la Geografía ante el Cambio Global. Cáceres, 14-17 octubre de 2025.</h2>
+<h2>Author</h2>
+<p>Manuel Blasco Jiménez (UAH)</p>
+<h2></h2>
+<h2>Acknowledgements</h2>
+<p>This plugin was initially generated using the QGIS Plugin Builder (GeoApt LLC) and subsequently developed and extended as part of academic research on Residential Vulnerability Index (IVR) analysis.</p>
+<h2></h2>
+<h2>References</h2>
+<p>Blasco, M.; Shurupov, N.; Aguilera, F.; Sánchez, I. &amp; Prada, J. (2025). Información catastral y análisis de la vulnerabilidad residencial: hacia una herramienta para su análisis en las ciudades españolas. En XXIX Congreso de la Asociación Española de Geografía: Desafíos de la Geografía ante el Cambio Global. Cáceres, 14-17 octubre de 2025.</p>
+</section>
+
+<section class="lang-section">
+  <div class="lang-tag">Español</div>
+  <p>IVR Plugin (Índice de Vulnerabilidad Residencial)</p>
+<h1>Idioma: Español</h1>
+<h2>Descripción general</h2>
+<p>El IVR Plugin es un complemento de QGIS diseñado para calcular y analizar el Índice de Vulnerabilidad Residencial (IVR) a partir de datos catastrales y espaciales.</p>
+<p>Proporciona herramientas para apoyar el análisis urbano mediante la identificación de patrones de vulnerabilidad residencial a diferentes escalas espaciales, facilitando una mejor toma de decisiones en planificación urbana y políticas públicas.</p>
+<h2></h2>
+<h2>Funcionalidades</h2>
+<ul><li>Cálculo del Índice de Vulnerabilidad Residencial (IVR)</li><li>Integración con datos catastrales</li><li>Procesamiento automatizado de datos</li><li>Visualización espacial de patrones de vulnerabilidad</li><li>Interfaz gráfica fácil de usar dentro de QGIS</li></ul>
+<h2></h2>
+<h2>Requisitos</h2>
+<ul><li>QGIS 3.34 o superior</li><li>Python 3 (incluido en QGIS)</li></ul>
+<h2></h2>
+<h2>Instalación</h2>
+<p>Desde el gestor de plugins de QGIS (recomendado):</p>
+<p>1. Abrir QGIS</p>
+<p>2. Ir a Plugins &gt; Administrar e instalar complementos</p>
+<p>3. Buscar &quot;IVR Plugin&quot;</p>
+<p>4. Hacer clic en Instalar</p>
+<p>Instalación manual:</p>
+<p>1. Descargar el archivo .zip del plugin</p>
+<p>2. Extraerlo en el directorio de plugins de QGIS:</p>
+<p>C:/Users/&lt;your_user&gt;/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins</p>
+<p>3. Reiniciar QGIS</p>
+<p>4. Activar el plugin en el gestor de complementos</p>
+<h2></h2>
+<h2>Uso</h2>
+<p>1. Abrir QGIS</p>
+<p>2. Cargar los datos espaciales y catastrales --&gt; https://www.sedecatastro.gob.es/</p>
+<p>3. Ejecutar el IVR Plugin desde el menú de Plugins</p>
+<p>4. Configurar los parámetros de entrada</p>
+<p>5. Ejecutar el análisis para generar los resultados del IVR</p>
+<h2></h2>
+<h2>Requisitos de datos</h2>
+<p>El plugin está diseñado para trabajar con:</p>
+<ul><li>Datos catastrales (&quot;Descarga de información alfanumérica por provincia (formato CAT)&quot;)</li><li>Capas vectoriales (&quot;Descarga de cartografía vectorial por provincia (formato Shapefile)&quot;)</li><li>Instalación de 7-Zip para descomprimir archivos en provincias de gran tamaño</li></ul>
+<h2></h2>
+<h2>Limitaciones</h2>
+<ul><li>Requiere descargar datos del Catastro (Dirección General del Catastro) mediante un certificado digital válido</li><li>Requiere datos de entrada correctamente formateados</li><li>Requiere 7-Zip para descomprimir archivos en algunas provincias</li><li>El rendimiento puede variar en función del tamaño del conjunto de datos</li></ul>
+<h2></h2>
+<h2>Contribuciones</h2>
+<p>Las contribuciones son bienvenidas. Se anima a los usuarios a reportar errores, proponer mejoras o contribuir al desarrollo del plugin mediante el envío de pull requests a través del repositorio.</p>
+<h2></h2>
+<h2>Licencia</h2>
+<p>Este plugin está licenciado bajo la GNU General Public License versión 2 o posterior (GPL v2+).</p>
+<p>Este software ha sido desarrollado como parte de una investigación académica formal. Si utiliza este plugin en su trabajo, por favor cite la siguiente referencia:</p>
+<p>Blasco, M.; Shurupov, N.; Aguilera, F.; Sánchez, I. &amp; Prada, J. (2025). Información catastral y análisis de la vulnerabilidad residencial: hacia una herramienta para su análisis en las ciudades españolas. En XXIX Congreso de la Asociación Española de Geografía: Desafíos de la Geografía ante el Cambio Global. Cáceres, 14-17 octubre de 2025.</p>
+<h2></h2>
+<h2>Autor</h2>
+<p>Manuel Blasco Jiménez (UAH)</p>
+<h2></h2>
+<h2>Agradecimientos</h2>
+<p>Este plugin fue generado inicialmente utilizando QGIS Plugin Builder (GeoApt LLC) y posteriormente desarrollado y ampliado como parte de una investigación académica sobre el análisis del Índice de Vulnerabilidad Residencial (IVR).</p>
+<h2></h2>
+<h2>Referencias</h2>
+<p>Blasco, M.; Shurupov, N.; Aguilera, F.; Sánchez, I. &amp; Prada, J. (2025). Información catastral y análisis de la vulnerabilidad residencial: hacia una herramienta para su análisis en las ciudades españolas. En XXIX Congreso de la Asociación Española de Geografía: Desafíos de la Geografía ante el Cambio Global. Cáceres, 14-17 octubre de 2025.</p>
+</section>
+
+<section class="lang-section">
+  <div class="lang-tag">Català</div>
+  <p>IVR Plugin (Índex de Vulnerabilitat Residencial)</p>
+<h1>Idioma: Català</h1>
+<h2>Descripció general</h2>
+<p>El IVR Plugin és un complement de QGIS dissenyat per calcular i analitzar l&#x27;Índex de Vulnerabilitat Residencial (IVR) a partir de dades cadastrals i espacials.</p>
+<p>Proporciona eines per donar suport a l&#x27;anàlisi urbana mitjançant la identificació de patrons de vulnerabilitat residencial a diferents escales espacials, facilitant una millor presa de decisions en planificació urbana i polítiques públiques.</p>
+<h2></h2>
+<h2>Funcionalitats</h2>
+<ul><li>Càlcul de l&#x27;Índex de Vulnerabilitat Residencial (IVR)</li><li>Integració amb dades cadastrals</li><li>Processament automatitzat de dades</li><li>Visualització espacial de patrons de vulnerabilitat</li><li>Interfície gràfica fàcil d&#x27;utilitzar dins de QGIS</li></ul>
+<h2></h2>
+<h2>Requisits</h2>
+<ul><li>QGIS 3.34 o superior</li><li>Python 3 (inclòs a QGIS)</li></ul>
+<h2></h2>
+<h2>Instal·lació</h2>
+<p>Des del gestor de complements de QGIS (recomanat):</p>
+<p>1. Obrir QGIS</p>
+<p>2. Anar a Complements &gt; Gestionar i instal·lar complements</p>
+<p>3. Cercar &quot;IVR Plugin&quot;</p>
+<p>4. Fer clic a Instal·lar</p>
+<p>Instal·lació manual:</p>
+<p>1. Descarregar el fitxer .zip del plugin</p>
+<p>2. Extreure&#x27;l al directori de complements de QGIS:</p>
+<p>C:/Users/&lt;your_user&gt;/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins</p>
+<p>3. Reiniciar QGIS</p>
+<p>4. Activar el plugin al gestor de complements</p>
+<h2></h2>
+<h2>Ús</h2>
+<p>1. Obrir QGIS</p>
+<p>2. Carregar les dades espacials i cadastrals --&gt; https://www.sedecatastro.gob.es/</p>
+<p>3. Executar l&#x27;IVR Plugin des del menú de Complements</p>
+<p>4. Configurar els paràmetres d&#x27;entrada</p>
+<p>5. Executar l&#x27;anàlisi per generar els resultats de l&#x27;IVR</p>
+<h2></h2>
+<h2>Requisits de dades</h2>
+<p>El plugin està dissenyat per treballar amb:</p>
+<ul><li>Dades cadastrals (&quot;Descarga de información alfanumérica por provincia (formato CAT)&quot;)</li><li>Capes vectorials (&quot;Descarga de cartografía vectorial por provincia (formato Shapefile)&quot;)</li><li>Instal·lació de 7-Zip per descomprimir arxius en províncies de gran mida</li></ul>
+<h2></h2>
+<h2>Limitacions</h2>
+<ul><li>Requereix descarregar dades del Cadastre (Dirección General del Catastro) mitjançant un certificat digital vàlid</li><li>Requereix dades d&#x27;entrada correctament formatejades</li><li>Requereix 7-Zip per descomprimir arxius en algunes províncies</li><li>El rendiment pot variar en funció de la mida del conjunt de dades</li></ul>
+<h2></h2>
+<h2>Contribucions</h2>
+<p>Les contribucions són benvingudes. Es recomana als usuaris informar d&#x27;errors, proposar millores o contribuir al desenvolupament del plugin mitjançant pull requests a través del repositori.</p>
+<h2></h2>
+<h2>Llicència</h2>
+<p>Aquest plugin està llicenciat sota la GNU General Public License versió 2 o posterior (GPL v2+).</p>
+<p>Aquest programari ha estat desenvolupat com a part d&#x27;una investigació acadèmica formal. Si utilitzeu aquest plugin en el vostre treball, si us plau citeu la següent referència:</p>
+<p>Blasco, M.; Shurupov, N.; Aguilera, F.; Sánchez, I. &amp; Prada, J. (2025). Información catastral y análisis de la vulnerabilidad residencial: hacia una herramienta para su análisis en las ciudades españolas. En XXIX Congreso de la Asociación Española de Geografía: Desafíos de la Geografía ante el Cambio Global. Cáceres, 14-17 octubre de 2025.</p>
+<h2></h2>
+<h2>Autor</h2>
+<p>Manuel Blasco Jiménez (UAH)</p>
+<h2></h2>
+<h2>Agraïments</h2>
+<p>Aquest plugin va ser generat inicialment utilitzant QGIS Plugin Builder (GeoApt LLC) i posteriorment desenvolupat i ampliat com a part d&#x27;una investigació acadèmica sobre l&#x27;anàlisi de l&#x27;Índex de Vulnerabilitat Residencial (IVR).</p>
+<h2></h2>
+<h2>Referències</h2>
+<p>Blasco, M.; Shurupov, N.; Aguilera, F.; Sánchez, I. &amp; Prada, J. (2025). Información catastral y análisis de la vulnerabilidad residencial: hacia una herramienta para su análisis en las ciudades españolas. En XXIX Congreso de la Asociación Española de Geografía: Desafíos de la Geografía ante el Cambio Global. Cáceres, 14-17 octubre de 2025.</p>
+</section>
+
+  </div>
+</body>
+</html>
