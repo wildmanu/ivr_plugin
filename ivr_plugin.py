@@ -48,7 +48,7 @@ class IVR:
             QCoreApplication.installTranslator(self.translator)
 
         self.actions = []
-        self.menu = self.tr(u'&IVR Plugin ')
+        self.menu = self.tr(u'&IVR')
         self.first_start = None
 
     def tr(self, message):
@@ -81,7 +81,7 @@ class IVR:
         icon_path = ':/plugins/ivr_plugin/icon.png'
         self.add_action(
             icon_path,
-            text=self.tr(u'IVR plugin'),
+            text=self.tr(u'IVR'),
             callback=self.run,
             parent=self.iface.mainWindow()
         )
@@ -89,7 +89,7 @@ class IVR:
 
     def unload(self):
         for action in self.actions:
-            self.iface.removePluginMenu(self.tr(u'&IVR Plugin '), action)
+            self.iface.removePluginMenu(self.tr(u'&IVR'), action)
             self.iface.removeToolBarIcon(action)
 
     def run(self):
@@ -100,7 +100,7 @@ class IVR:
             self.dlg = IVRDialog()
         except Exception:
             tb = traceback.format_exc()
-            QMessageBox.critical(self.iface.mainWindow(), "IVR Plugin - Error creando el diálogo", tb)
+            QMessageBox.critical(self.iface.mainWindow(), "IVR - Error creando el diálogo", tb)
             print(tb)
             return
     
