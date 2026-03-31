@@ -2,7 +2,7 @@
 name=IVR
 qgisMinimumVersion=3.28
 description=Residential Vulnerability Index (IVR) analysis using cadastral and spatial data
-version=0.1.0
+version=1.0.0
 author=Manuel Blasco Jiménez
 email=manuel2blasco@edu.uah.es
 
