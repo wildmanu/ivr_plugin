@@ -39,7 +39,6 @@ __all__ = [
     "inf_aux_ivr",
     "parametos_sigmoides",
     "visualizar_normalizacion",
-    "visualizar_normalizacion",
     "generar_info_txt",
            ]
 
@@ -95,11 +94,13 @@ def inf_aux_ivr(df_archivos, dfs_bi, df_pro, parametros_reg,
         ruta_sigmoides = os.path.join(carpeta_figuras, "ivr_funciones.png")
         
         # Calculado el 07/02/2026 con datos de II semestre de 2025 de catastro
+        # Revisado     26/04/2026 con datos de II semestre de 2025 de catastro
         parametros_globales = {
-        "supc_bi": {"loc": 87.853863963425700, "scale": 16.5700712996760620},
-        "ante_bi": {"loc": 1984.5976385822298, "scale": 11.0895156036098110},
-        "cvcn_bi": {"loc": 0.9907060595134738, "scale": 0.06898716437223629},
+        "supc_bi": {"loc": 88.48192541283842, "scale": 16.761048160091516},
+        "ante_bi": {"loc": 1984.6904625553177, "scale": 11.114081625504172},
+        "cvcn_bi": {"loc": 0.9922999671009426, "scale": 0.06827077513299756},
         }
+
 
         specs = [
             {"tipo": "spc", "variable": "supc_bi", "xlabel": "Superficie habitable"},
@@ -158,7 +159,7 @@ def inf_aux_ivr(df_archivos, dfs_bi, df_pro, parametros_reg,
             right_margin = 0.96,
             label_right_x = 0.980,
             output = ruta_normalizacion,
-            dpi = 400
+            dpi = 300
         )
     
     # Lógica para generar csv 
@@ -352,7 +353,7 @@ def _tabla_info_bajo_ax(
     # PD, en un futuro se podría poner varios análsisi por años 2024, 2025, etc
     # si hubiera datos historicos sería genial. Escribir a Catastro? 
     
-    rows.append(["IVR GAU", "IIS-2025", "Muestra de 672 municipios",
+    rows.append(["IVR GAU", "IIS-2025", "Muestra de 688 municipios",
                  f"{loc_g:.3f}", f"{scale_g:.3f}"])
     
     if loc_reg:
@@ -470,7 +471,7 @@ def _tabla_info_bajo_ax(
 def visualizar_sigmoides_scipy(
         dfs_bi, df_archivos, dic_parametros, parametros_globales,
         parametros_estadisticos, parametros_reg, specs,
-        bins = 45, xmax_ate = 2026, fun_loc = True, # Cambiar a True
+        bins = 45, xmax_ate = int, fun_loc = True, # Cambiar a True
         titulo = "Ajustes logísticos del IVR en bienes inmuebles",
         col_municipio = "nmun",
         figsize = None,
@@ -480,7 +481,7 @@ def visualizar_sigmoides_scipy(
         show_right_ticks = True,
         ypad = 0.02,
         output = None,
-        dpi = 400
+        dpi = 300
         
 ):
     """
@@ -874,7 +875,7 @@ def visualizar_normalizacion(
     label_right_x = 0.985,
     invert_ivr_axis = True,
     output = None,
-    dpi = 400
+    dpi = 300
 ):
     """
     Figura con toda información del proceso de normalización para todas las
