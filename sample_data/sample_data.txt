@@ -1,0 +1,76 @@
+================================================================================
+          ES                SAMPLE DATA – IVR PLUGIN
+================================================================================
+
+La carpeta "sample_data" incluye un conjunto de datos de ejemplo correspondiente
+al municipio de Alcalá de Henares (Madrid).
+
+Los datos originales proceden de la Sede Electrónica del Catastro:
+https://www.sedecatastro.gob.es/
+
+Con el fin de reducir el tamaño de los archivos y facilitar las pruebas del
+plugin, los ficheros han sido recortados conservando únicamente la información
+necesaria para la correcta ejecución del proceso.
+
+Pasos básicos:
+
+1. Abrir QGIS.
+2. Instalar o activar el plugin IVR.
+3. En "Carpeta de entrada", seleccionar la carpeta "sample_data".
+4. En "Carpeta de salida", seleccionar la carpeta donde se guardarán los resultados.
+5. Ejecutar el proceso.
+
+Los resultados generados permitirán comprobar el correcto funcionamiento del
+plugin antes de utilizar conjuntos de datos completos.
+
+================================================================================
+        EN                   SAMPLE DATA – IVR PLUGIN
+================================================================================
+
+The "sample_data" folder contains a sample dataset corresponding to the
+municipality of Alcalá de Henares (Madrid, Spain).
+
+The original data were obtained from the Spanish Cadastre Electronic Office:
+https://www.sedecatastro.gob.es/
+
+To reduce file size and facilitate testing, the original datasets have been
+trimmed, retaining only the information required for the correct execution of
+the plugin.
+
+Basic steps:
+
+1. Open QGIS.
+2. Install or enable the IVR plugin.
+3. In the "Input Folder" field, select the "sample_data" folder.
+4. In the "Output Folder" field, select the folder where the results will be saved.
+5. Run the process.
+
+The generated outputs can be used to verify the correct operation of the plugin
+before working with complete datasets.
+
+================================================================================
+         CA                 SAMPLE DATA – IVR PLUGIN
+================================================================================
+
+La carpeta "sample_data" inclou un conjunt de dades d'exemple corresponent al
+municipi d'Alcalá de Henares (Madrid).
+
+Les dades originals procedeixen de la Seu Electrònica del Cadastre:
+https://www.sedecatastro.gob.es/
+
+Amb la finalitat de reduir la mida dels fitxers i facilitar les proves del
+connector, els fitxers han estat retallats conservant únicament la informació
+necessària per a la correcta execució del procés.
+
+Passos bàsics:
+
+1. Obrir QGIS.
+2. Instal·lar o activar el connector IVR.
+3. Al camp "Carpeta d'entrada", seleccionar la carpeta "sample_data".
+4. Al camp "Carpeta de sortida", seleccionar la carpeta on es desaran els resultats.
+5. Executar el procés.
+
+Els resultats generats permetran comprovar el correcte funcionament del
+connector abans d'utilitzar conjunts de dades complets.
+
+

@@ -2,9 +2,9 @@
 name=IVR
 qgisMinimumVersion=3.28
 description=Residential Vulnerability Index (IVR) analysis using cadastral and spatial data
-version=1.1.0
+version=1.2.0
 author=Manuel Blasco Jiménez
-email=manuel2blasco@edu.uah.es
+email=manuel.blasco@edu.uah.es
 
 about=This plugin calculates and analyses the Residential Vulnerability Index (IVR) using cadastral data from Spain. Developed as part of academic research, it provides tools for spatial analysis of residential vulnerability. It requires downloading cadastral data (Dirección General del Catastro), which may require a digital certificate. In some cases, data are distributed as split compressed files, requiring 7-Zip for extraction.
 

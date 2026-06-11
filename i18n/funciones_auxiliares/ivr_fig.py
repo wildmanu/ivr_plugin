@@ -75,7 +75,7 @@ def inf_aux_ivr(df_archivos, dfs_bi, df_pro, parametros_reg,
         columnas_prov=columnas_provincias,
         autor = "Manuel Blasco Jiménez (UAH), Francisco Israel Aguilera Benavente (UAH) y Nikolai Shurupov (UAH).",
         colaboradores = "José Prada Trigo (UVa), Irene Sánchez Ondoño (UVa), Julia Clemente Párraga (UAH).",
-        version="1.2.0"
+        version="1.0.0"
     )
 
         
